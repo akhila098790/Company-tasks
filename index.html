@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Interactive Web Project</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Dynamic</a>
+      <a href="#">Timer</a>
+      <a href="#">Contact Form</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-text">
+        <h2>About This Project</h2>
+        <p>
+          This is a sample interactive web page built using HTML and JavaScript.
+          It features dynamic content manipulation, form validation, and local storage.
+        </p>
+
+        <h3>Features Demonstrated:</h3>
+        <ul>
+          <li>DOM manipulation</li>
+          <li>Form validation</li>
+          <li>Event handling</li>
+          <li>Dynamic content updates</li>
+          <li>Local storage</li>
+        </ul>
+      </div>
+
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15220.63506008021!2d78.33066174282226!3d17.499933021980198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d5ccaa5227%3A0xde534d4e3362e42b!2sOppty%20TechHub%20Private%20Limited!5e0!3m2!1sen!2sin!4v1767603472665!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="btn">Toggle Map</button>
+      </div>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo">
+      <h2>Interactive To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" placeholder="New Task...">
+        <button class="btn">Add</button>
+      </div>
+
+      <ul class="task-list">
+        <li>Learn HTML <button>Remove</button></li>
+        <li>Practice JavaScript <button>Remove</button></li>
+        <li>Store data in localStorage <button>Remove</button></li>
+      </ul>
+
+      <p class="note">Tasks are saved in your browser's local storage.</p>
+      <button class="btn danger">Clear All Tasks</button>
+    </section>
+
+    <!-- Timer -->
+    <section class="timer">
+      <h2>Auto-Updating Timer</h2>
+      <p>This counter auto-updates every second:</p>
+      <h3>Time elapsed: 00:00:08</h3>
+
+      <div class="timer-buttons">
+        <button class="btn">Pause Timer</button>
+        <button class="btn">Reset Timer</button>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2>Contact Form</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text">
+        <span class="error">Please enter your name.</span>
+
+        <label>Email:</label>
+        <input type="email">
+        <span class="error">Please enter a valid email address.</span>
+
+        <label>Password:</label>
+        <input type="password">
+        <span class="error">Password must be at least 6 characters long.</span>
+
+        <label>Message:</label>
+        <textarea></textarea>
+
+        <div class="checkbox-group">
+          <label>Subscribe to newsletter?</label>
+          <input type="radio" name="sub"> Yes
+          <input type="radio" name="sub"> No
+        </div>
+
+        <div class="checkbox-group">
+          <label>Preferred Contact:</label>
+          <input type="checkbox"> Email
+          <input type="checkbox"> Phone
+        </div>
+
+        <button class="btn danger">Clear Data</button>
+        <p class="success">Your information is saved in this browser!</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Interactive Web Project | Your email: <a href="#">akhreddy@gmail.com</a></p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
