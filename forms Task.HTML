@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My HTML Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3366cc;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        .content-row {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        img {
+            max-width: 400px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 3px solid #141313;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My HTML Portfolio</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Demo</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>About HTML</h2>
+    <p>
+        HTML stands for HyperText Markup Language. It is the standard language used to create web pages.
+    </p>
+</section>
+
+<section class="content-row">
+    <div>
+        <h2>Key Features of HTML</h2>
+        <ul>
+            <li>Easy to learn</li>
+            <li>Semantic structure</li>
+            <li>Multimedia support</li>
+            <li>Forms and tables</li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop and coffee">
+        <p><em>Laptop and coffee</em></p>
+    </div>
+</section>
+
+<section class="content-row">
+    <div>
+        <h2>HTML Topics Covered</h2>
+        <ol>
+            <li>Headings & Sections</li>
+            <li>Lists and Tables</li>
+            <li>Forms and Inputs</li>
+            <li>Media Embeds</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Project Timeline</h3>
+        <table>
+            <tr>
+                <th>Phase</th>
+                <th>Tasks</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Planning</td>
+                <td>Research & Outline</td>
+                <td>1 Week</td>
+            </tr>
+            <tr>
+                <td>Development</td>
+                <td>Coding Content</td>
+                <td>2 Weeks</td>
+            </tr>
+            <tr>
+                <td>Review</td>
+                <td>Testing & Fixes</td>
+                <td>3 Days</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section>
+    <h2>Resources</h2>
+    <ul>
+        <li>
+            <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> – HTML Guide<br>
+            <small>Comprehensive HTML reference</small>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> – HTML Tutorial<br>
+            <small>Learn HTML basics</small>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Demo Video</h2>
+    <iframe
+        src="https://youtu.be/UB1O30fR-EE?si=m3flMnOyKF-Du7Bs"
+        title="HTML Demo Video"
+        loading="lazy">
+    </iframe>
+    <p><em>Lazy-loaded demo via iframe</em></p>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+    <form>
+        <label>Name:<br>
+            <input type="text" name="name">
+        </label><br><br>
+
+        <label>Email:<br>
+            <input type="email" name="email">
+        </label><br><br>
+
+        <label>Message:<br>
+            <textarea rows="4"></textarea>
+        </label><br><br>
+
+        <label>Subscribe to newsletter?</label><br>
+        <input type="radio" name="subscribe"> Yes
+        <input type="radio" name="subscribe"> No
+        <br><br>
+
+        <label>Preferred Contact:</label><br>
+        <input type="checkbox"> Email
+        <input type="checkbox"> Phone
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 My HTML Portfolio |
+    <a href="akhreddy098@gmail.com">akhreddy098@gmsil.com</a> |
+    Location: Anantapur,Andhra Pradesh
+</footer>
+
+</body>
+</html>
