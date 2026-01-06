@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+/* HEADER */
+.top-bar {
+  background: #dfdddd;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .top-bar h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-weight: normal;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #4fd1c5; /* light aqua like your design */
+}
+
+.social span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+}
+
+.sidebar img {
+  width: 180px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar nav a.active {
+  background: #7de6df;
+}
+
+.sidebar blockquote {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* MAIN CONTENT */
+.content {
+  padding: 25px;
+  width: 100%;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+/* SKILLS TABLE */
+.skills {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1ps solid gray;
+  margin-top: 10px;
+}
+
+.skills th {
+  background: #7de6df;
+  padding: 10px;
+}
+
+.skills td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+ .skills i {
+  font-size: 28px;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 20px;
+}
+
+.contact label {
+  display: inline-block;
+  width: 55px;
+}
+
+.contact input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.contact textarea {
+  width: 200px;
+  height: 85px;
+  display: block;
+  margin-top: 5px;
+}
+
+.contact button {
+  margin-top: 10px;
+  background-color: lightgray;
+  border:none;
+  padding: 6px;
+  border-radius: 3px;
+}
+.contact button:hover{
+    color: #f4f5f7;
+    background-color: green;
+}
+
+/* FOOTER */
+footer {
+  background: #2f3550;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 20px;
+}
