@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing Table</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #faf6f2;
+}
+
+h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.left-container p{
+    font-size: 1rem;
+    color:#666 ;
+    margin: 0;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.pricing {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background: #e8e7e7;
+    border-radius: 18px;
+    padding: 40px 30px;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(6, 6, 6, 0.05);
+    position: relative;
+}
+
+.card.featured {
+    background: linear-gradient(#eceae9, #ffffff);
+    border: 2px solid #f5d5b5;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff8c1a;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #d77008;
+    margin-bottom: 15px;
+}
+
+.plan {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: #888;
+}
+
+.desc {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+ul li::before {
+    content: "✓";
+    color: #ff8c1a;
+    margin-right: 10px;
+}
+
+button {
+    background: #fff2e5;
+    color: #ff8c1a;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.featured button {
+    background: #ff8c1a;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PRICING</h1>
+    <p class="subtitle">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+    <div class="pricing">
+        <div class="card">
+            <div class="icon">☆</div>
+            <div class="plan">Standard</div>
+            <div class="price">$9 <span>/month</span></div>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul>
+                <li>Vestibulum ante ipsum primis</li>
+                <li>Fusce vulputate eleifend</li>
+                <li>Nullam ac tortor vitae</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card featured">
+            <div class="badge">Recommended</div>
+            <div class="icon">✦</div>
+            <div class="plan">Professional</div>
+            <div class="price">$29 <span>/month</span></div>
+            <p class="desc">Maecenas tempus tellus eget condimentum.</p>
+            <ul>
+                <li>Donec quam felis ultrices</li>
+                <li>Aenean massa imperdiet</li>
+                <li>Cras dapibus vivamus</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">★</div>
+            <div class="plan">Ultimate</div>
+            <div class="price">$49 <span>/month</span></div>
+            <p class="desc">Etiam rhoncus maecenas tempus tellus.</p>
+            <ul>
+                <li>Phasellus viverra nulla</li>
+                <li>Quisque rutrum aenean</li>
+                <li>Etiam ultricies nisi vel</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
