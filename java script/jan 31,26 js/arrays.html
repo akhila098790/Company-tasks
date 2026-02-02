@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Arrays</h2>
+
+    <script>
+
+        // Array slice
+        console.log("Array slice")
+        const a = [1, 2, 3, 4, 5];
+        const res = a.slice(1, 4);
+        console.log(res);
+        console.log(a)
+
+        // Array some
+        console.log(" Array Some")
+        const b = [1, 2, 3, 4, 5];
+        let arr = b.some((val) => val > 4);
+        console.log(arr);
+
+        // Array Map
+        console.log("Array map")
+        let c = [4, 9, 16, 25];
+        let sub = c.map(geeks);
+
+        function geeks() {
+            return c.map(Math.sqrt);
+        }
+        console.log(sub);
+
+        // Array Filter
+        console.log("Array Filter")
+        let a1 = [21, 22, 23, 24, 25]
+        let a2 = a1.filter((num) => num > 1)
+        console.log(a2)
+
+        // Array Reduce
+        console.log("Array Reduce")
+        let d = [88, 50, 25, 10];
+        let d1 = a.reduce(geeks);
+
+        function geeks(tot, num) {
+            return tot - num;
+        }
+        console.log(d1);
+
+        // Array Values
+        console.log("Array reverse")
+        let g = [12, 13, 14, 15, 16];
+        g.reverse();
+        console.log(g);
+
+        // Array Values
+        console.log("Array values")
+        const m = ["90", "80", "70"];
+        const num = a.values();
+
+        for (const value of num) {
+            console.log(value);
+        }
+
+
+    </script>
+</body>
+</html>
