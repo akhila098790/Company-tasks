@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Async Function</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+            color: darkslategray;
+        }
+    </style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</head>
+
+<body>
+    <h2> Async Function </h2>
+    <p id="functions"></p>
+
+    <script>
+
+        function getMessage() {
+            return new Promise(resolve => {
+                setTimeout(() => resolve("Akhila, knowledge is the key of  consistency "), 2000);
+            });
+        }
+
+        async function showMessage() {
+            const msg = await getMessage();
+            document.getElementById("functions").textContent = msg;
+        }
+
+        showMessage();
+    </script>
+</body>
+</html>

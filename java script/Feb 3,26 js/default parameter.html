@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Default Parameter Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Default parameter Function </h2>
+    <p id="functions"></p>
+    <script>
+        function greet(name = "Pavan Kalyan", greeting = "Hey") {
+            return `${greeting}, ${name}*`;
+        }
+        const msg1 = greet();
+        const msg2 = greet("Akhila");
+        const msg3 = greet("Pavan","Hey");
+
+        document.getElementById('functions').textContent =
+            `${msg1} | ${msg2} | ${msg3}`;
+    </script>
+</body>
+</html>

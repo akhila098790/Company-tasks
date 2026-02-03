@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Pure Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Pure Function </h2>
+    <p id="functions"></p>
+    <script>
+        function subtract(a, b) {
+            return a - b; 
+        }
+
+        document.getElementById('functions').textContent =
+            'Pure subtract(410, 211) = ' + subtract(410, 211);
+    </script>
+</body>
+</html>

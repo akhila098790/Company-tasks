@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>higher order Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> higher order Function </h2>
+    <p id="functions"></p>
+    <script>
+        
+        function operate(a, b, c) {
+            return c(a, b);
+        }
+
+        function makeMultiplier(n) {
+            return function (x) {
+                return n * x;
+            };
+        }
+
+        const sum = operate(7, 8, (a, b) => a + b);   
+        const double = makeMultiplier(3);
+        const doubled = double(7);                    
+
+        document.getElementById("functions").textContent =
+            "sum: " + sum + " | doubled: " + doubled;
+    </script> 
+</body>
+</html>

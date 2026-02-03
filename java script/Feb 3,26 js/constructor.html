@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Constructor Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Constructor Function </h2>
+    <p id="functions"></p>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.getInfo = function () {
+            return "name: " + this.name + " ,age: " + this.age;
+        };
+
+        const person = new Person("Akhila", "22");
+        document.getElementById("functions").innerHTML = person.getInfo();
+
+    </script>
+</body>
+</html>

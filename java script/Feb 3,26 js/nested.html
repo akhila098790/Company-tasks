@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Nested Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Nested Function </h2>
+    <p id="functions"></p>
+     <script>
+        function outerFun(a) {
+            function innerFun(b) {
+                return a + b; 
+            }
+            return innerFun;
+        }
+
+        const addTwenty = outerFun(20);
+        document.getElementById('functions').textContent = 'Addition = ' + addTwenty(5);
+    </script>
+</body>
+</html>

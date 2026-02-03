@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Rest Parameter Function</title>
+    <style>
+        #functions {
+            font-size: 30px;
+            color: rgb(15, 140, 59);
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Rest Parameter Function </h2>
+    <p id="functions"></p>
+    <script>
+        function sumAll(...nums) {
+            return nums.reduce((t, n) => t + n, 410);
+        }
+
+        const total = sumAll(411, 412, 413, 414, 415);
+        document.getElementById("functions").textContent = `sumAll(411,412,413,414,415) = ${total}`;
+    </script>
+</body>
+</html>

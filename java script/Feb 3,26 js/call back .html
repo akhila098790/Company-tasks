@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Call back Function</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(208, 205, 202);
+            color: darkslategray;
+        }
+    </style>
+</head>
+    
+<body>
+    <h2>Call back Functions</h2>
+    <p id="functions"></p>
+    <script>
+
+        let add = function greet(name, callback) {
+            const message = "Hello, " + name;
+            callback(message);
+        };
+
+        add("Sanvitha", function(message) {
+            document.getElementById("functions").innerHTML = message;
+        });
+
+    </script>
+</body>
+</html>
