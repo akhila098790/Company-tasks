@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title> Function Expression</title>
+    <style>
+        body{
+            font-family:'Times New Roman', Times, serif;
+            background-color: rgb(168, 132, 78);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Functions</h1>
+    <p id="functions"></p>
+     
+
+    <script>
+        let greet = function (name) {
+        return "Hey " + name;
+    }
+    document.getElementById("functions").innerHTML = greet("Sanvitha !");
+    </script>
+</body>
+</html>

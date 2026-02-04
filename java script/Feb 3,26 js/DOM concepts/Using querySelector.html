@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName Example</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgb(104, 104, 177);
+    }
+</style>
+</head>
+
+<body>
+    <h2> Get elements by Tag Name</h2>
+    <p> Paragraph 1</p>
+    <p> Paragraph 2</p>
+    <p> Paragraph 3</p>
+    <button onclick="changecolor()">changecolour</button>
+
+    <style>
+        function changecolor(){
+        let firstPara = document.querySelector(".para");
+        firstPara.style.color = 'blue';
+
+        let secondPara = document.querySelector("#second-para");
+        secondpara.style .color='blue';
+
+        let paras = document.querySelectorAll(".para");
+        paras.forEach(para=> {
+            para.style.background = 'yellow';
+        })
+        }
+
+    </style>
+
+
+
+</html>

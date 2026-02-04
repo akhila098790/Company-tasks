@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>DOM concepts</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(rgb(141, 70, 70),rgb(191, 152, 80),rgb(83, 204, 83),rgb(210, 210, 75),rgb(111, 111, 231));
+            color: rgb(11, 11, 11);
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+    
+<body>
+    <div id="Demo">
+        <h2>DOM concepts</h4>
+    </div>
+    <div id="display">
+        <p class="paragraph">Knowledge</p>
+        <p class="paragraph">Consistency</p>
+    </div>
+    <script>
+        var elem = document.getElementById("Demo");
+        elem.innerHTML = "Knowledge is the consistency of the key";
+    </script>
+</body>
+</html>

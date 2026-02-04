@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Async Function</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(225, 223, 219);
+            color: rgb(13, 14, 14);
+        }
+
+        #emoji-container {
+         width: 300px;
+         height: 200px;
+         border: 2px solid#454545;
+         background-color: cadetblue;
+         text-align: center;
+         padding: 20px;
+        }
+
+        button{
+         margin: 10px;   
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+        }
+    </style>  
+    </head> 
+    <body>
+        <h2> Emoji Buttons</h2>
+        <div id ="emoji-container">
+            <p id="emoji-text">How are you feeling today?</p>
+        </div>
+        <button onclick="changeemoji('happy')">Happy😊</button>
+        <button onclick="changeemoji('sad')">sad😢</button>
+        <button onclick="changeemoji('angry')">angry😡</button>
+        <button onclick="changeemoji('sleepy')">sleepy😴</button>
+
+     <script>
+        function changeemoji(emoji){
+            let emojicontainer = document.getElementById("emoji-container");
+            let emojitext = document.getElementById("emoji-text");
+
+            switch(emoji){
+                case'happy':
+                emojicontainer.style.background= 'yellow';
+                emojitext.innerHTML = 'I am Feeling Great!😊';
+                break;
+
+                case'sad':
+                emojicontainer.style.background= 'blue';
+                emojitext.innerHTML = 'I am Feeling down today!😢';
+                break;
+
+                case'angry':
+                emojicontainer.style.background= 'red';
+                emojitext.innerHTML = 'I am Furstrated!😡';
+                break;
+
+                case'sleepy':
+                emojicontainer.style.background= ' purple';
+                emojitext.innerHTML = 'I need a nap!😴';
+                break;
+
+            }
+        }
+    </script>
+</body>
+</html>                               

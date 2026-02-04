@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>DOM concepts</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor:pointer;
+            background-color: rgb(104, 104, 177);
+        }
+
+    </style>
+</head>
+    
+<body>
+  <h2> Get elements by Tag Name</h2>
+  <p> Paragraph 1</p>
+  <p> Paragraph 2</p>
+  <p> Paragraph 3</p>
+  <button onclick="changecolor()">ChangeColor</button>
+<script>
+    function changecolor(){
+        let paragraphs = document.getElementsByTagName("p");
+        for(let i=0;i<paragraphs.length;i++){
+            paragraphs[i].style.color='blue';
+        }
+        }
+</script>
+</body>
+</html>

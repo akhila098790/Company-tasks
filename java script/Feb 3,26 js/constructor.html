@@ -18,16 +18,16 @@
     <h2> Constructor Function </h2>
     <p id="functions"></p>
     <script>
-        function Person(name, age) {
-            this.name = name;
-            this.age = age;
+        function Person(Name, Age) {
+            this.Name = Name;
+            this.Age = Age;
         }
 
         Person.prototype.getInfo = function () {
-            return "name: " + this.name + " ,age: " + this.age;
+            return "Name: " + this.Name + " <br>Age: " + this.Age;
         };
 
-        const person = new Person("Akhila", "22");
+        const person = new Person(" Akhila", "22");
         document.getElementById("functions").innerHTML = person.getInfo();
 
     </script>
