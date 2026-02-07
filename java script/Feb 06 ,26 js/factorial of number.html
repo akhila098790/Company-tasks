@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Checkers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: rgb(73, 64, 32);
+        }
+
+        .box {
+            background: linear-gradient(to right, rgb(100, 86, 146), rgb(158, 158, 105));
+            width: 320px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(24, 24, 24, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: chartreuse;
+        }
+
+        p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Find out the Factorial of Number </h1>
+    <div class="box">
+        <h2>Factorial Calculator</h2>
+        <input type="number" id="factNum" placeholder="Enter number">
+        <button onclick="findFactorial()">Calculate</button>
+        <p id="Result"></p>
+    </div>
+
+    <script>
+        function findFactorial() {
+            let num = document.getElementById("factNum").value;
+            let result = document.getElementById("Result");
+            let fact = 1;
+
+            for (let i = 1; i <= num; i++) {
+                fact *= i;
+            }
+
+            result.innerHTML = "Factorial = " + fact;
+        }
+    </script>
+</body>
+
+</html>
