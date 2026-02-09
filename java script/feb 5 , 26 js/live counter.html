@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Counter</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzgtMDkteC5qcGc.jpg');
+        margin: 0;
+        width: 100%;
+      }
+
+      h1{
+        color: antiquewhite;
+      }
+
+      #count {
+        font-size: 50px;
+        color: rgb(197, 195, 205);
+        margin-bottom: 15px;
+      }
+
+      .box {
+        background: url('https://pikwizard.com/pw/medium/20286a7445a75a40d33c08892b7c25c4.png');
+        width: min(500px, 90%);
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        margin-top: 150px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        margin: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-minus {
+        background: #dd1515;
+        color: white;
+      }
+      .btn-plus {
+        background: #5bbe15;
+        color: white;
+      }
+      .btn-reset {
+        background: #112227;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+
+      <h1>Live Counter</h1>
+
+      <div id="count">0</div>
+
+      <button class="btn-minus" onclick="update('decrease')">-</button>
+      <button class="btn-plus" onclick="update('increase')">+</button>
+      <button class="btn-reset" onclick="update('reset')">reset</button>
+
+    </div>
+
+    <script>
+
+      let count = 0;
+
+      function update(type) {
+        switch (type) {
+          case "increase":
+            for (let i = 0; i < 1; i++) {
+              count++;
+            }
+            break;
+
+          case "decrease":
+            for (let i = 0; i < 1; i++) {
+              count--;
+            }
+            break;
+
+          case "reset":
+            for (let i = 0; i < 1; i++) {
+              count = 0;
+            }
+            break;
+        }
+
+        document.getElementById("count").innerText = count;
+      }
+      
+    </script>
+  </body>
+</html>

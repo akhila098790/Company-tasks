@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide & Show</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        background: url('https://img.freepik.com/free-photo/old-room-interior_1048-8886.jpg?semt=ais_hybrid&w=740&q=80');
+        margin: 0;
+        width: 100%;
+      }
+
+      .text {
+        font-size: 20px;
+        color: rgb(4, 4, 4);
+        margin: 10px;
+        font-weight: 200;
+      }
+
+      .box {
+        background: url('https://thumbs.dreamstime.com/b/rich-brown-animal-hide-texture-featuring-dense-short-fur-fibers-creating-warm-natural-background-luxurious-textile-designs-434122364.jpg');
+        width: min(500px, 80%);
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        margin-top: 100px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-hide {
+        background: #ef4444;
+        color: white;
+      }
+      .btn-show {
+        background: #22c55e;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="box">
+
+      <h1>Hide & Show</h1>
+
+      <p class="text">
+        Web development involves creating responsive and interactive websites
+        using HTML, CSS, and JavaScript.
+      </p>
+
+      <button class="btn-hide" onclick="toggle('hide')">Hide</button>
+      <button class="btn-show" onclick="toggle('show')">Show</button>
+
+    </div>
+
+    <script>
+
+      function toggle(action) {
+        let elements = document.getElementsByClassName("text");
+
+        for (let i = 0; i < elements.length; i++) {
+          switch (action) {
+            case "hide":
+              elements[i].style.display = "none";
+              break;
+
+            case "show":
+              elements[i].style.display = "block";
+              break;
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>

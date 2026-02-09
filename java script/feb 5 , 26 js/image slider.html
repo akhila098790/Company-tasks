@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <style>
+      body {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background: url('https://img.freepik.com/free-vector/v915_53876-174949.jpg');
+      }
+      
+      .box {
+        background: url('https://thearsenalofgrace.co.uk/wp-content/uploads/2023/03/slider-background.jpg');
+        width: min(550px, 90%);
+        margin: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        margin-top: 100px;
+      }
+
+      img {
+        width: 500px;
+        height: 200px;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .slider-wrap {
+        margin-top: 0;
+      }
+
+      #slider {
+        width: min(400px, 95%);
+        height: 300px;
+        border-radius: 16px;
+        object-fit: cover;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+        opacity: 1;
+        transition: opacity 0.1s ease;
+      }
+
+      .slider-buttons {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-prev {
+        background: #229c1e;
+        color: white;
+      }
+      .btn-next {
+        background: #499bc1;
+        color: white;
+      }
+      
+      #status {
+        margin-top: 10px;
+        color: #5e7aa1;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+
+      <h1>Image Slider</h1>
+
+      <div class="slider-wrap">
+
+        <img
+          id="slider"
+          src="https://withlocals-com-res.cloudinary.com/image/upload/w_412,h_290,c_fill,g_auto,q_auto,dpr_3.0,f_auto/947a2c7ef4a3b09b48995c29c5cf9d41";
+          alt="slider image"
+        />
+
+        <div class="slider-buttons">
+
+          <button class="btn-prev" onclick="prevImage()">Previous</button>
+          <button class="btn-next" onclick="nextImage()">Next</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const images = [
+        "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/10/Karthika-Gupta-Compelling-Nature-Photos-6.jpg?fit=1500%2C1000&ssl=1",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4VtCTene6vFI5Xxndc1mETymdCbFbv2AOw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwq3ZckJVAaHxvGrd3EA19XB-dtbIbkwZObQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSb6DKzPKjivmME0g6Mr1R-LIprDB74UZ9Ww&s",
+      ];
+
+      let index = 0;
+      let intervalId = null;
+
+      function setImage(newIndex) {
+        const img = document.getElementById("slider");
+
+        img.style.opacity = "0";
+        setTimeout(() => {
+          index = newIndex;
+          img.src = images[index];
+          img.style.opacity = "1";
+        }, 300);
+      }
+
+      function nextImage() {
+        let newIndex = index + 1;
+        if (newIndex >= images.length) {
+          newIndex = 0;
+        }
+        setImage(newIndex);
+      }
+
+      function prevImage() {
+        let newIndex = index - 1;
+        if (newIndex < 0) {
+          newIndex = images.length - 1;
+        }
+        setImage(newIndex);
+      }
+    </script>
+  </body>
+</html>
