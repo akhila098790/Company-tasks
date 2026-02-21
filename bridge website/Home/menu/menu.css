@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+body {
+  color: #fff;
+}
+
+.img{
+    background: url(assests/menu-1.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+.menu{
+  color: #FFFFFF;
+  margin: 150px 550px;
+  font-size: 55px;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(1px);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: aliceblue;
+  background-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+.btn {
+    padding: 10px 30px;
+    margin-right: 20px;
+    text-decoration: #ffffff;
+    border-color: #272525;
+    background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container-image{
+    display: flex;
+    width: 200%;
+    height: 100vh;
+}
+.lists{
+  text-align: center;
+  background-color: #000000;
+  color: #fff4f4;
+}
+
+.menu{
+  padding: 20px 0px;
+}
+
+.menu-items{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 100px;
+  color: #fff;
+}
+
+.drinks-1{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.drinks-2{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.list{
+  text-align: center;
+  background-color: #000000;
+  color: #fff4f4;
+}
+
+.items{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 100px;
+  color: #fff;
+}
+
+.drinks-3{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.drinks-4{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wine{
+  text-align: center;
+  color: #fff4f4;
+  background-color: #000000;
+}
+
+.selection{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 100px;
+  color: #fff;
+  background-color: #000000;
+}
+
+.drinks-5{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.drinks-6{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container3{
+    background: transparent;
+}
+.image-1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container-4{
+    background-color: #080808;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.container-4 h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+.container-4 h5{
+    font-size: 18px;
+}
+.container-4 p{
+    font-size: 18px;
+}
+.tag{
+    display: grid;
+}
