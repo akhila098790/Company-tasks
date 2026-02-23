@@ -4,16 +4,19 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
   color: #fff;
+  background-color: #000;
 }
 
 body {
   color: #fff;
+  background-color: #000;
 }
 
 .img{
     background: url(assets/about.jpg);
     width: 100%;
     height: 100vh;
+    background-color: #000;
 }
 
 .About{
@@ -30,7 +33,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   backdrop-filter: blur(1px);
   z-index: 10;
@@ -44,7 +47,7 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 3px;
   color: aliceblue;
@@ -69,15 +72,85 @@ nav a:hover {
     border-color: #272525;
     background-color: transparent;
 }
-.section{
-    background-color: black;
+
+.our-story {
+    padding: 80px 10%;
+    background-color: #000;
 }
-.image{
-    width: 60%;
-    height: 50vh;
-    position: relative;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
 }
-.h1{
-    font-size: 55px;
-    color: azure;
+
+.left {
+    flex: 1;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.right {
+    flex: 1;
+    color: #fff;
+}
+
+.right h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.right p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/** Button Style Like Image **/
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #c8a96a;
+    color: #c8a96a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c8a96a;
+    color: #000;
+}
+.vedio-holder{
+  width: 100;
+  height: 400px;
+}
+
+.container6{
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.container6 h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+.container6 h5{
+    font-size: 18px;
+}
+.container6 p{
+    font-size: 18px;
+}
+.tag{
+    display: grid;
+    line-height: 1.6;
 }

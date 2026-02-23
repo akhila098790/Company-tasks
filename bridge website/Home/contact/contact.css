@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:'Poppins', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400;
+    color: antiquewhite;
+}
+
+.hero{
+    height:500px;
+    background:url("https://bridge269.qodeinteractive.com/wp-content/uploads/2019/10/contact-title-img.jpg") center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.navbar{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 60px;
+  background-color: #000000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:40px;
+  font-size:18px;
+  background-color: #000000;
+}
+
+.menu li{
+  cursor:pointer;
+  opacity:0.8;
+  color: #fff;
+  background-color: #000000;
+}
+
+.menu li.active,
+.menu li:hover{
+  opacity:1;
+  border-bottom:2px solid white;
+  padding-bottom:5px;
+}
+
+.btn{
+  background:transparent;
+  border:1px solid white;
+  color:rgb(255, 250, 250);
+  padding:10px 20px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.btn:hover{
+  background:white;
+}
+.hero::after{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.hero h1{
+    position:relative;
+    font-size:60px;
+    color: #FFFFFF;
+    z-index:2;
+}
+
+.contact-section{
+    padding:100px 10%;
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+    background-color: #000000;
+}
+
+.contact-left{
+    flex:1;
+}
+
+.contact-left span{
+    font-style:italic;
+    font-size:14px;
+    color:#aaa;
+}
+
+.contact-left h2{
+    font-size:48px;
+    margin:15px 0 25px;
+}
+
+.contact-left p{
+    color:#bbb;
+    line-height:1.8;
+    max-width:450px;
+    margin-bottom:35px;
+    font-size:14px;
+}
+
+.contact-info{
+    list-style:none;
+    font-size:14px;
+    color:#ccc;
+}
+
+.contact-info li{
+    margin-bottom:15px;
+}
+
+.contact-right{
+    flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    background:transparent;
+    border:1px solid #444;
+    padding:14px;
+    margin-bottom:20px;
+    color:#fff;
+    font-size:14px;
+    outline:none;
+}
+
+.contact-form textarea{
+    height:140px;
+    resize:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#fff;
+}
+
+.contact-form button{
+    background:transparent;
+    border:1px solid #fff;
+    color:#fff;
+    padding:10px 30px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#fff;
+    color:#000;
+}
+
+
+.map{
+    width:100%;
+    height:350px;
+    background:url("https://bridge269.qodeinteractive.com/wp-content/uploads/2019/11/Inner-map-1024x283.jpg") center/cover no-repeat;
+}
+
+.container6{
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.container6 h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+.container6 h5{
+    font-size: 18px;
+}
+.container6 p{
+    font-size: 18px;
+}
+.tag{
+    display: grid;
+}
+    
