@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-Plain-HD-Backgrounds-Screen-Download.jpg);
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.Box {
+  width: 420px;
+  margin: 50px auto;
+  background: url(https://files.123freevectors.com/wp-content/original/202451-pastel-blue-plain-background-vector-eps.jpg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#addButton {
+  background: yellow;
+  border: none;
+  padding: 8px 12px;
+}
+
+#addButton{
+    cursor: pointer;
+}
+
+.editBtn {
+  background: green;
+  color: white;
+  border: none;
+  margin-left: 5px;
+}
+.editBtn {
+    cursor: pointer;
+}
+
+.deleteBtn {
+  background: red;
+  color: white;
+  border: none;
+  margin-left: 5px;
+}
+.deleteBtn{
+    cursor: pointer;
+}
