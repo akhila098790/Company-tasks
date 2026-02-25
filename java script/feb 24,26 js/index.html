@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup, Login & Student Registration</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background:#f2f4f8;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+.container {
+  background:#fff;
+  padding:20px 25px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  width:420px;
+}
+h2 {
+  text-align:center;
+  margin-bottom:15px;
+}
+
+input, select, textarea, button {
+  width:100%;
+  padding:8px;
+  margin:5px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+button {
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.primary{
+  background:#007bff;
+  color:#fff
+}
+
+.success{
+  background:#28a745;
+  color:#fff
+}
+
+.warning{
+  background:#ffc107;
+}
+
+.danger{
+  background:#dc3545;
+  color:#fff;
+}
+
+.link-btn{
+  background:none;
+  border:none;
+  color:#007bff;
+  cursor:pointer;
+  text-decoration:underline;
+  margin-top:5px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+  font-size:13px;
+}
+
+th,td{
+  border:1px solid #ddd;
+  padding:6px;
+  text-align:center;
+}
+
+th{
+  background:#f0f0f0;
+}
+
+.hidden{
+  display:none;
+}
+
+.msg{
+  text-align:center;
+  font-size:13px;
+}
+
+.row{
+  display:flex;
+  gap:6px;
+}
+
+.row>*{flex:1}
+
+</style>
+</head>
+<body>
+
+<div class="container" id="signupBox">
+<h2>Sign Up</h2>
+<input id="suUser" placeholder="Username">
+<input id="suPass" type="password" placeholder="Password">
+<button class="success" onclick="signup()">Sign Up</button>
+<p id="suMsg" class="msg"></p>
+<button class="link-btn" onclick="showLogin()">Already have account? Login</button>
+</div>
+
+<div class="container hidden" id="loginBox">
+<h2>Login</h2>
+<input id="liUser" placeholder="Username">
+<input id="liPass" type="password" placeholder="Password">
+<button class="primary" onclick="login()">Login</button>
+<p id="liMsg" class="msg" style="color:red"></p>
+<button class="link-btn" onclick="showSignup()">Create account</button>
+</div>
+
+<!-- Student Registration -->
+<div class="container hidden" id="studentBox">
+<h2>Student Registration</h2>
+
+<input id="name" placeholder="Student Name">
+<div class="row">
+<input id="dob" type="date" placeholder="Date of Birth">
+<input id="mobile" placeholder="Mobile Number">
+</div>
+<input id="email" type="email" placeholder="Email ID">
+
+<div class="row">
+<select id="gender">
+<option value="">Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+<select id="qualification">
+<option value="">Education Qualification</option>
+<option>10th</option>
+<option>12th</option>
+<option>Diploma</option>
+<option>Degree</option>
+<option>PG</option>
+</select>
+</div>
+
+<div class="row">
+<input id="father" placeholder="Father Name">
+<input id="mother" placeholder="Mother Name">
+</div>
+
+<input id="department" placeholder="Department">
+<input id="course" placeholder="Course">
+<input id="hobbies" placeholder="Hobbies">
+
+<textarea id="address" placeholder="Address"></textarea>
+
+<label>Student Photo</label>
+<input id="photo" type="file" accept="image/*">
+<label>Signature</label>
+<input id="sign" type="file" accept="image/*">
+
+<button class="success" onclick="addStudent()">Add / Update</button>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Mobile</th>
+<th>Dept</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="studentTable"></tbody>
+</table>
+</div>
+
+<script>
+let users=[];
+let students=[];
+let editIndex=-1;
+
+function showLogin(){signupBox.classList.add('hidden');loginBox.classList.remove('hidden');}
+function showSignup(){loginBox.classList.add('hidden');signupBox.classList.remove('hidden');}
+
+function signup(){
+const u=suUser.value.trim();
+const p=suPass.value.trim();
+if(!u||!p){suMsg.style.color='red';suMsg.innerText='Enter username & password';return}
+users.push({u,p});
+suMsg.style.color='green';suMsg.innerText='Signup successful!';
+suUser.value='';suPass.value='';
+}
+
+function login(){
+const u=liUser.value.trim();
+const p=liPass.value.trim();
+const found=users.find(x=>x.u===u&&x.p===p);
+if(found){loginBox.classList.add('hidden');studentBox.classList.remove('hidden');}
+else{liMsg.innerText='Invalid login credentials'}
+}
+
+function addStudent(){
+const s={
+name:name.value,
+dob:dob.value,
+mobile:mobile.value,
+email:email.value,
+gender:gender.value,
+qualification:qualification.value,
+father:father.value,
+mother:mother.value,
+department:department.value,
+course:course.value,
+hobbies:hobbies.value,
+address:address.value,
+photo:photo.files[0]?.name||'',
+sign:sign.files[0]?.name||''
+};
+if(!s.name||!s.mobile)return;
+
+if(editIndex===-1)students.push(s);
+else{students[editIndex]=s;editIndex=-1}
+
+clearForm();
+renderTable();
+}
+
+function renderTable(){
+studentTable.innerHTML='';
+students.forEach((s,i)=>{
+studentTable.innerHTML+=`<tr>
+<td>${s.name}</td>
+<td>${s.mobile}</td>
+<td>${s.department}</td>
+<td>
+<button class="warning" onclick="editStudent(${i})">Edit</button>
+<button class="danger" onclick="deleteStudent(${i})">Delete</button>
+</td>
+</tr>`});
+}
+
+function editStudent(i){
+const s=students[i];
+name.value=s.name;
+dob.value=s.dob;
+mobile.value=s.mobile;
+email.value=s.email;
+gender.value=s.gender;
+qualification.value=s.qualification;
+father.value=s.father;
+mother.value=s.mother;
+department.value=s.department;
+course.value=s.course;
+hobbies.value=s.hobbies;
+address.value=s.address;
+editIndex=i;
+}
+
+function deleteStudent(i){students.splice(i,1);renderTable();}
+
+function clearForm(){
+name.value='';dob.value='';mobile.value='';email.value='';gender.value='';qualification.value='';
+father.value='';mother.value='';department.value='';course.value='';hobbies.value='';address.value='';
+photo.value='';sign.value='';
+}
+</script>
+
+</body>
+</html>
