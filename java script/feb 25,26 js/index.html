@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="View port" content="width=device-width,intitial-scale=1.0">
+    <title>Smart calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="calculator">
+            <div class="title"> Calculator</div>
+            <div id="display" class="display">0</div>
+
+            <div class="keys">
+                <button class="btn light" onclick="clearAll()">AC</button>
+                <button class="btn light" onclick="backspace()">←</button>
+                <button class="btn light" onclick="input('%')">%</button>
+                <button class="btn op" onclick="input('/')">÷</button>
+
+                <button class="btn dark" onclick="input('7')">7</button>
+                <button class="btn dark" onclick="input('8')">8</button>
+                <button class="btn dark" onclick="input('9')">9</button>
+                <button class="btn op" onclick="input('*')">X</button>
+
+                <button class="btn dark" onclick="input('4')">4</button>
+                <button class="btn dark" onclick="input('5')">5</button>
+                <button class="btn dark" onclick="input('6')">6</button>
+                <button class="btn op" onclick="input('-')">-</button>
+
+                <button class="btn dark" onclick="input('1')">1</button>
+                <button class="btn dark" onclick="input('2')">2</button>
+                <button class="btn dark" onclick="input('3')">3</button>
+                <button class="btn op" onclick="input('+')">+</button>
+
+                <button class="btn dark" onclick="input('0')">0</button>
+                <button class="btn dark" onclick="input('00')">00</button>
+                <button class="btn dark" onclick="input('.')">.</button>
+                <button class="btn op" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
