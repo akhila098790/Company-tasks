@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.top-content {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.top-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.top-content p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.caurosel{
+  position:relative;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slides{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 80%;
+  height:80%;
+  object-fit: cover;
+}
+
+.button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(168, 165, 165);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding:10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ .prev{ left: 10px;}
+.next{ right:10px;} 
+
+/* .row{
+    display: flex;
+    color: #555;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+/* ensure container is centered and constrained */
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+} */
+/* individual tech feature boxes */
+/* .container .html,
+.container .css,
+.container .javascript {
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container .html h2,
+.container .css h2,
+.container .javascript h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container .html p,
+.container .css p,
+.container .javascript p {
+    line-height: 1.6;
+} */ 
+
+.row{
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+/* ensure container is centered and constrained */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
