@@ -1,0 +1,4004 @@
+{
+  "courses": [
+    {
+      "id": "html",
+      "title": "HTML Complete Tutorial",
+      "level": "Beginner",
+      "short": "Structure pages with elements, attributes, text, links, media, lists, tables, forms, semantics and accessibility.",
+      "modules": [
+        {
+          "title": "Getting Started",
+          "lessonSlugs": [
+            "html-intro",
+            "html-head",
+            "html-editors",
+            "html-seo"
+          ]
+        },
+        {
+          "title": "Core Elements",
+          "lessonSlugs": [
+            "html-elements",
+            "html-attributes",
+            "html-text",
+            "html-comments",
+            "html-links",
+            "html-images",
+            "html-lists",
+            "html-tables",
+            "html-forms",
+            "html-semantic",
+            "html-a11y",
+            "html-iframes",
+            "html-media-av",
+            "html-responsive-images"
+          ]
+        }
+      ],
+      "lessonCount": 18
+    },
+    {
+      "id": "css",
+      "title": "CSS Complete Tutorial",
+      "level": "Beginner",
+      "short": "Style pages using selectors, box model, Flexbox, Grid, responsive design, transitions and variables.",
+      "modules": [
+        {
+          "title": "Getting Started",
+          "lessonSlugs": [
+            "css-intro",
+            "css-include",
+            "css-typography",
+            "css-backgrounds"
+          ]
+        },
+        {
+          "title": "Selectors",
+          "lessonSlugs": [
+            "css-selectors",
+            "css-specificity",
+            "css-pseudo-classes",
+            "css-pseudo-elements"
+          ]
+        },
+        {
+          "title": "Box Model & Layout",
+          "lessonSlugs": [
+            "css-box",
+            "css-flex",
+            "css-grid",
+            "css-position",
+            "css-zindex"
+          ]
+        },
+        {
+          "title": "Responsive & Effects",
+          "lessonSlugs": [
+            "css-media",
+            "css-transitions",
+            "css-variables",
+            "css-animations",
+            "css-transforms"
+          ]
+        }
+      ],
+      "lessonCount": 18
+    },
+    {
+      "id": "js",
+      "title": "JavaScript Complete Tutorial",
+      "level": "Beginner → Intermediate",
+      "short": "Add behavior using variables, loops, functions, DOM manipulation, events and localStorage.",
+      "modules": [
+        {
+          "title": "Getting Started",
+          "lessonSlugs": [
+            "js-intro",
+            "js-console"
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "lessonSlugs": [
+            "js-variables",
+            "js-types",
+            "js-conditions",
+            "js-loops",
+            "js-functions",
+            "js-arrays",
+            "js-objects",
+            "js-array-methods",
+            "js-promises",
+            "js-errors"
+          ]
+        },
+        {
+          "title": "DOM & Storage",
+          "lessonSlugs": [
+            "js-dom",
+            "js-events",
+            "js-localstorage",
+            "js-fetch",
+            "js-asyncawait",
+            "js-modules"
+          ]
+        }
+      ],
+      "lessonCount": 18
+    }
+  ],
+  "lessons": [
+    {
+      "courseId": "html",
+      "module": "Getting Started",
+      "slug": "html-intro",
+      "title": "What is HTML?",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "basics"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "What is HTML?"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-intro.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "HTML is the markup language that structures content on the web using elements such as headings, paragraphs, links, images, and forms."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Minimal document",
+          "description": "Start every page like this.",
+          "code": {
+            "language": "html",
+            "value": "<!doctype html>\n<html lang=\"en\">\n<head>\n <meta charset=\"utf-8\">\n <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n <title>Page</title>\n</head>\n<body>\n <h1>Hello</h1>\n <p>My page.</p>\n</body>\n</html>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Hello page",
+          "description": "Heading + paragraph.",
+          "code": {
+            "language": "html",
+            "value": "<h1>Hello Web</h1>\n<p>Welcome to HTML.</p>"
+          },
+          "result": {
+            "html": "<h1>Hello Web</h1><p>Welcome to HTML.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<h1>Hello Web</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": "console.log('hi')"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Getting Started",
+      "slug": "html-head",
+      "title": "Head Essentials",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "head",
+        "meta"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Head Essentials"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-head.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "The <head> contains metadata, title, favicon links, and CSS/JS includes."
+        },
+        {
+          "type": "syntax",
+          "title": "Meta tags",
+          "description": "Viewport is important for mobile.",
+          "code": {
+            "language": "html",
+            "value": "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"description\" content=\"Short description\">"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "External CSS",
+          "description": "Put CSS in separate file.",
+          "code": {
+            "language": "html",
+            "value": "<link rel=\"stylesheet\" href=\"css/style.css\">"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "External JS",
+          "description": "defer runs after HTML is parsed.",
+          "code": {
+            "language": "html",
+            "value": "<script src=\"js/app.js\" defer></script>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Getting Started",
+      "slug": "html-editors",
+      "title": "Editors & Files",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "tools"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Editors & Files"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-editors.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Write HTML in any text editor. Save as .html and open in a browser. For best results use VS Code + Live Server."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Common structure",
+          "description": "Organize files for easy linking.",
+          "code": {
+            "language": "text",
+            "value": "/index.html\n/courses.html\n/css/style.css\n/js/app.js\n/data/content.json"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-elements",
+      "title": "Elements & Tags",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "elements"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Elements & Tags"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-elements.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Most elements have opening + closing tags. Some are void elements like <img>, <br>, <input>."
+        },
+        {
+          "type": "syntax",
+          "title": "Normal element",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<p>Text</p>"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "Void element",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<img src=\"img.png\" alt=\"...\">"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Common elements",
+          "description": "Headings and paragraph.",
+          "code": {
+            "language": "html",
+            "value": "<h1>Title</h1>\n<h2>Section</h2>\n<p>Paragraph text.</p>"
+          },
+          "result": {
+            "html": "<h1>Title</h1><h2>Section</h2><p>Paragraph text.</p>",
+            "css": "body{font-family:system-ui;padding:16px;line-height:1.6}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-attributes",
+      "title": "Attributes",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "attributes"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Attributes"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-attributes.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Attributes add extra info: href, src, alt, id, class, title, aria-*."
+        },
+        {
+          "type": "syntax",
+          "title": "Format",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<a href=\"page.html\" title=\"Go\">Link</a>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Class styling",
+          "description": "Class is used for CSS styling.",
+          "code": {
+            "language": "html",
+            "value": "<p class=\"note\">Important note</p>"
+          },
+          "result": {
+            "html": "<p class='note'>Important note</p>",
+            "css": "body{font-family:system-ui;padding:16px}.note{background:#eef2ff;border:1px solid #c7d2fe;padding:10px;border-radius:12px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-text",
+      "title": "Text & Inline Tags",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "text"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Text & Inline Tags"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-text.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use headings (<h1>–<h6>) for hierarchy, <p> for paragraphs, and inline tags like <strong>, <em>, <mark>, <code>."
+        },
+        {
+          "type": "syntax",
+          "title": "Inline emphasis",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<strong>Important</strong> and <em>emphasis</em>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Inline code",
+          "description": "Use <code> for inline code.",
+          "code": {
+            "language": "html",
+            "value": "<p>Use <code>&lt;a&gt;</code> for links.</p>"
+          },
+          "result": {
+            "html": "<p>Use <code>&lt;a&gt;</code> for links.</p>",
+            "css": "body{font-family:system-ui;padding:16px}code{background:#eef2ff;border:1px solid #c7d2fe;padding:2px 6px;border-radius:8px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-comments",
+      "title": "Comments & Entities",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "entities"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Comments & Entities"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-comments.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Comments are not rendered. Entities show reserved characters like < and >."
+        },
+        {
+          "type": "syntax",
+          "title": "Comment",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<!-- comment -->"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "Entities",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "&lt; &gt; &amp; &quot; &#39;"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Entity example",
+          "description": "Show tags as text.",
+          "code": {
+            "language": "html",
+            "value": "<p>Use &lt;h1&gt; for headings.</p>"
+          },
+          "result": {
+            "html": "<p>Use &lt;h1&gt; for headings.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-links",
+      "title": "Links",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "links"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Links"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-links.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use <a> to navigate inside your site and to external websites."
+        },
+        {
+          "type": "syntax",
+          "title": "Internal link",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<a href=\"courses.html\">Courses</a>"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "External link",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener\">Example</a>"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<a href='courses.html'>Go to Courses</a>",
+            "css": "body{font-family:system-ui;padding:16px}a{color:#2563eb;font-weight:800}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-images",
+      "title": "Images",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "images"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Images"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-images.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use <img> with src and alt. Make it responsive with CSS."
+        },
+        {
+          "type": "syntax",
+          "title": "Image",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<img src=\"photo.jpg\" alt=\"Description\">"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Responsive image",
+          "description": "max-width:100% keeps it inside container.",
+          "code": {
+            "language": "html",
+            "value": "<img class=\"pic\" src=\"https://via.placeholder.com/640x220\" alt=\"Banner\">"
+          },
+          "result": {
+            "html": "<img class='pic' src='https://via.placeholder.com/640x220' alt='Banner'>",
+            "css": "body{font-family:system-ui;padding:16px}img.pic{max-width:100%;height:auto;border-radius:14px;border:1px solid #e2e8f0}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-lists",
+      "title": "Lists",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "lists"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Lists"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-lists.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Lists are <ul>/<ol> with <li> items."
+        },
+        {
+          "type": "syntax",
+          "title": "Unordered",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<ul><li>One</li><li>Two</li></ul>"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "Ordered",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<ol><li>First</li><li>Second</li></ol>"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<ul><li>HTML</li><li>CSS</li><li>JS</li></ul>",
+            "css": "body{font-family:system-ui;padding:16px;line-height:1.7}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-tables",
+      "title": "Tables",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "tables"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Tables"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-tables.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Tables show structured data using <table>, <tr>, <th>, <td>."
+        },
+        {
+          "type": "syntax",
+          "title": "Skeleton",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<table>\n <tr><th>H</th></tr>\n <tr><td>D</td></tr>\n</table>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Styled table",
+          "description": "Simple table.",
+          "code": {
+            "language": "html",
+            "value": "<table class='t'><tr><th>Day</th><th>Topic</th></tr><tr><td>1</td><td>HTML</td></tr></table>"
+          },
+          "result": {
+            "html": "<table class='t'><tr><th>Day</th><th>Topic</th></tr><tr><td>1</td><td>HTML</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}.t{border-collapse:collapse}.t th,.t td{border:1px solid #e2e8f0;padding:10px}.t th{background:#f3f4f6;text-align:left}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-forms",
+      "title": "Forms",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "forms"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Forms"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-forms.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Forms collect user input. Always use labels for accessibility."
+        },
+        {
+          "type": "syntax",
+          "title": "Form skeleton",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<form>\n <label for=\"name\">Name</label>\n <input id=\"name\" type=\"text\">\n <button type=\"submit\">Submit</button>\n</form>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Input types",
+          "description": "Email + checkbox + button.",
+          "code": {
+            "language": "html",
+            "value": "<form class='f'><label>Email</label><input type='email' required><label class='row'><input type='checkbox'> Subscribe</label><button type='button' id='b'>Send</button></form><p id='m'></p>"
+          },
+          "result": {
+            "html": "<form class='f'><label>Email</label><input type='email' required><label class='row'><input type='checkbox'> Subscribe</label><button type='button' id='b'>Send</button></form><p id='m'></p>",
+            "css": "body{font-family:system-ui;padding:16px}.f{display:grid;gap:10px;max-width:420px}input{padding:10px;border:1px solid #cbd5e1;border-radius:12px}label{font-weight:900}.row{display:flex;gap:10px;align-items:center;font-weight:700;color:#334155}button{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('m').textContent='Sent (demo) ✅';};"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-semantic",
+      "title": "Semantic HTML",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "semantic"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Semantic HTML"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-semantic.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Semantic tags describe meaning: header, nav, main, section, article, aside, footer."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Layout",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<header>...</header>\n<nav>...</nav>\n<main>...</main>\n<footer>...</footer>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-a11y",
+      "title": "Accessibility",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "html",
+        "accessibility",
+        "a11y"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Accessibility (A11y)"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-a11y.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML is used to structure content on the web.\n\nIt uses elements like headings, paragraphs, links, images, and forms.\n\nEach element is represented using tags such as <h1>, <p>, <a>.\n\nHTML forms the foundation of every web page."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use alt text, labels, semantic tags, focus styles, and meaningful link text."
+        },
+        {
+          "type": "syntax",
+          "title": "Label + input",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<label for=\"email\">Email</label>\n<input id=\"email\" type=\"email\">"
+          }
+        },
+        {
+          "type": "syntax",
+          "title": "ARIA label",
+          "description": "Use only when needed.",
+          "code": {
+            "language": "html",
+            "value": "<button aria-label=\"Close\">×</button>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Table demo",
+          "description": "Tables organize data into rows and columns.",
+          "code": {
+            "language": "html",
+            "value": "<table>...rows...</table>"
+          },
+          "result": {
+            "html": "<table border='1' cellpadding='8'><tr><th>Name</th><th>Role</th></tr><tr><td>Ada</td><td>Developer</td></tr></table>",
+            "css": "body{font-family:system-ui;padding:16px}\n table{border-collapse:collapse}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>Hello HTML</h1>\n<p>Edit and run.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Getting Started",
+      "slug": "css-intro",
+      "title": "What is CSS?",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "basics"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "What is CSS?"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-intro.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "CSS (Cascading Style Sheets) controls the **look and feel** of your HTML.\n\nYou write rules like `selector { property: value; }` to change colors, spacing, layout, and animations.\n\nCSS “cascades”: the final style depends on specificity, order, and inheritance."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "CSS controls presentation: colors, spacing, fonts, and layout."
+        },
+        {
+          "type": "syntax",
+          "title": "Rule",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "selector{ property:value; }"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Style headings",
+          "description": "Simple CSS styling.",
+          "code": {
+            "language": "css",
+            "value": "h1{color:#2563eb}\np{color:#334155;line-height:1.7}"
+          },
+          "result": {
+            "html": "<h1>CSS</h1><p>CSS styles the page.</p>",
+            "css": "body{font-family:system-ui;padding:16px}h1{color:#2563eb}p{color:#334155;line-height:1.7}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='row'><div class='box'>1</div><div class='box'>2</div><div class='box'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.row{display:flex;gap:12px;flex-wrap:wrap}\n.box{flex:1;min-width:90px;padding:14px;border-radius:14px;border:1px solid #cbd5e1;background:#eef2ff;font-weight:900;text-align:center}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Getting Started",
+      "slug": "css-include",
+      "title": "Link CSS",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "basics"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "How to include CSS"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-include.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "To use CSS, you can:\n\n• Add it **inline** (`style=\"...\"`)\n• Use **internal CSS** inside `<style>` in the `<head>`\n• Use an **external stylesheet** with `<link rel=\"stylesheet\" href=\"...\">` (best for real websites)."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Best practice: keep CSS in external files and link them in the head."
+        },
+        {
+          "type": "syntax",
+          "title": "Link tag",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<link rel=\"stylesheet\" href=\"css/style.css\">"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='row'><div class='box'>1</div><div class='box'>2</div><div class='box'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.row{display:flex;gap:12px;flex-wrap:wrap}\n.box{flex:1;min-width:90px;padding:14px;border-radius:14px;border:1px solid #cbd5e1;background:#eef2ff;font-weight:900;text-align:center}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Selectors",
+      "slug": "css-selectors",
+      "title": "Selectors",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "selectors"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Selectors"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-selectors.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "CSS selectors are used to target HTML elements to apply styles.\n\nCommon types include:\n- Element selector (h1, p)\n- Class selector (.box)\n- ID selector (#header)\n- Attribute selector ([type=\"text\"])\n- Pseudo-class (:hover)\n\nSelectors are the foundation of styling in CSS."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Target elements: element, class, id, attribute, pseudo-class, pseudo-element."
+        },
+        {
+          "type": "syntax",
+          "title": "Examples",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "p{}\n.note{}\n#title{}\ninput[type=\"email\"]{}\na:hover{}\nli::marker{}"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<p class='note'>Note</p><p>Text</p>",
+            "css": "body{font-family:system-ui;padding:16px}.note{background:#eef2ff;border:1px solid #c7d2fe;padding:10px;border-radius:12px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Selectors",
+      "slug": "css-specificity",
+      "title": "Specificity",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "specificity"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Specificity"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-specificity.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Specificity determines which CSS rule is applied when multiple rules target the same element.\n\nPriority order:\n- Inline styles\n- ID selectors\n- Class, attribute, pseudo-class\n- Element selectors\n\nIf specificity is equal, the last declared rule is applied."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "When multiple rules match, the more specific selector wins. If equal, later wins."
+        },
+        {
+          "type": "syntax",
+          "title": "Order",
+          "description": "Syntax",
+          "code": {
+            "language": "text",
+            "value": "Inline > ID > Class/attr/pseudo-class > Element"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='row'><div class='box'>1</div><div class='box'>2</div><div class='box'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.row{display:flex;gap:12px;flex-wrap:wrap}\n.box{flex:1;min-width:90px;padding:14px;border-radius:14px;border:1px solid #cbd5e1;background:#eef2ff;font-weight:900;text-align:center}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Box Model & Layout",
+      "slug": "css-box",
+      "title": "Box Model",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "box-model"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Box Model"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-box.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Every element is a rectangle made of:\n\n**Content → Padding → Border → Margin**\n\nPadding adds space *inside* the border, margin adds space *outside* the border.\n\nUnderstanding the box model helps you size, align, and space elements correctly."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Content → padding → border → margin."
+        },
+        {
+          "type": "syntax",
+          "title": "Spacing",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "margin:12px; padding:16px; border:1px solid #e2e8f0;"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<div class='card'>Card</div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin-top:12px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Box Model & Layout",
+      "slug": "css-flex",
+      "title": "Flexbox",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "flexbox"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Flexbox"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-flex.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Flexbox is a layout system used to arrange elements in a single direction (row or column).\n\nWhen display:flex is applied to a container, its child elements become flexible items.\n\nYou can control layout using:\n- justify-content → horizontal alignment\n- align-items → vertical alignment\n- gap → space between items\n\nFlexbox is widely used for responsive layouts and aligning elements easily."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use flex for one-direction layouts (row/column)."
+        },
+        {
+          "type": "syntax",
+          "title": "Container",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": ".row{display:flex;gap:12px;align-items:center}"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<div class='row'><div class='b'>1</div><div class='b'>2</div><div class='b'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.row{display:flex;gap:12px;flex-wrap:wrap}.b{flex:1;min-width:120px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;text-align:center;font-weight:900}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Box Model & Layout",
+      "slug": "css-grid",
+      "title": "Grid",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "grid"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "CSS Grid"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-grid.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "CSS Grid is a **2‑dimensional** layout system (rows + columns).\n\nDefine a grid on the parent using `display: grid`, then control columns/rows with `grid-template-columns/rows`.\n\nGrid is perfect for page layouts, cards, dashboards, and complex responsive designs."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Grid for 2D layouts."
+        },
+        {
+          "type": "syntax",
+          "title": "Grid",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": ".grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<div class='grid'><div class='t'>A</div><div class='t'>B</div><div class='t'>C</div><div class='t'>D</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:700px){.grid{grid-template-columns:1fr}}.t{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;text-align:center;font-weight:900}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Responsive & Effects",
+      "slug": "css-media",
+      "title": "Media Queries",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "responsive"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Media Queries"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-media.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Media queries are used to create responsive designs.\n\nThey apply styles based on screen size or device conditions.\n\nExample:\n@media (max-width: 600px) { ... }\n\nThis ensures your website adapts to mobile, tablet, and desktop screens."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Change styles based on screen size."
+        },
+        {
+          "type": "syntax",
+          "title": "Example",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "@media (max-width:700px){ .row{flex-direction:column} }"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='row'><div class='box'>1</div><div class='box'>2</div><div class='box'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.row{display:flex;gap:12px;flex-wrap:wrap}\n.box{flex:1;min-width:90px;padding:14px;border-radius:14px;border:1px solid #cbd5e1;background:#eef2ff;font-weight:900;text-align:center}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Responsive & Effects",
+      "slug": "css-transitions",
+      "title": "Transitions",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "transition"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Transitions"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-transitions.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Transitions animate a property change smoothly.\n\nUse `transition: property duration timing-function;` on the element.\n\nCommon properties to transition: `transform`, `opacity`, `background-color`, `box-shadow`."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Animate changes smoothly."
+        },
+        {
+          "type": "syntax",
+          "title": "Transition",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "transition: transform .2s ease, box-shadow .2s ease;"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<button class='btn'>Hover</button>",
+            "css": "body{font-family:system-ui;padding:16px}.btn{padding:12px 14px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(0,0,0,.15)}",
+            "js": ""
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Responsive & Effects",
+      "slug": "css-variables",
+      "title": "CSS Variables",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "css",
+        "variables"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "CSS Variables"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-variables.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "CSS variables (custom properties) store reusable values.\n\nDefine them in `:root` (global) like `--primary: #2563eb;` then use with `var(--primary)`.\n\nThey make themes easier and reduce repeated values."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Custom properties make themes easy."
+        },
+        {
+          "type": "syntax",
+          "title": "Variables",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": ":root{--primary:#2563eb}\n.btn{background:var(--primary)}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Box styling demo",
+          "description": "A simple card with padding, border-radius, and shadow.",
+          "code": {
+            "language": "css",
+            "value": ".cardx{padding:16px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}"
+          },
+          "result": {
+            "html": "<div class='cardx'><h3>Box</h3><p>Padding + border + shadow</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.cardx{padding:16px;border-radius:16px;border:1px solid #cbd5e1;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}\n.cardx h3{margin:0 0 6px;color:#2563eb}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='row'><div class='box'>1</div><div class='box'>2</div><div class='box'>3</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}\n.row{display:flex;gap:12px;flex-wrap:wrap}\n.box{flex:1;min-width:90px;padding:14px;border-radius:14px;border:1px solid #cbd5e1;background:#eef2ff;font-weight:900;text-align:center}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Getting Started",
+      "slug": "js-intro",
+      "title": "What is JavaScript?",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "basics"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "What is JavaScript?"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-intro.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "JavaScript adds behavior: events, DOM updates, storage, and API calls."
+        },
+        {
+          "type": "syntax",
+          "title": "Load JS",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<script src=\"js/app.js\" defer></script>"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<button id='b'>Click</button><p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}button{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('o').textContent='Clicked ✅';};"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Getting Started",
+      "slug": "js-console",
+      "title": "Console",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "debug"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Console"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-console.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use console.log to debug. Open DevTools (F12)."
+        },
+        {
+          "type": "syntax",
+          "title": "Logging",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "console.log('hello');\nconsole.warn('warn');\nconsole.error('error');"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<button id='b'>Click</button><p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\nbutton{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('o').textContent='Clicked ✅';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-variables",
+      "title": "Variables",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "variables"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Variables"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-variables.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use const (no reassignment) and let (reassignable)."
+        },
+        {
+          "type": "syntax",
+          "title": "const/let",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "const name='Asha';\nlet score=10;\nscore+=5;"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": "const name='Asha';let score=10;score+=5;document.getElementById('out').textContent=name+' score '+score;"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-types",
+      "title": "Types",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "types"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Data Types"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-types.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Common types: string, number, boolean, null, undefined, object, array, function."
+        },
+        {
+          "type": "syntax",
+          "title": "typeof",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "typeof 'hi' // string\ntypeof 10 // number"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<button id='b'>Click</button><p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\nbutton{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('o').textContent='Clicked ✅';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-conditions",
+      "title": "Conditionals",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "if",
+        "switch"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Conditionals"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-conditions.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Use if/else and switch."
+        },
+        {
+          "type": "syntax",
+          "title": "if",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "if(x>0){...} else {...}"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": "const n=7;document.getElementById('o').textContent=(n%2===0)?'Even':'Odd';"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-loops",
+      "title": "Loops",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "loops"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Loops"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-loops.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "for/while repeat tasks."
+        },
+        {
+          "type": "syntax",
+          "title": "for",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "for(let i=0;i<3;i++){ console.log(i); }"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<ul id='list'></ul>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": "const ul=document.getElementById('list');for(let i=1;i<=5;i++){const li=document.createElement('li');li.textContent='Item '+i;ul.appendChild(li);}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-functions",
+      "title": "Functions",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "functions"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Functions"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-functions.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Functions group reusable logic. Arrow functions are concise."
+        },
+        {
+          "type": "syntax",
+          "title": "Arrow",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "const add=(a,b)=>a+b;"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": "const add=(a,b)=>a+b;document.getElementById('o').textContent='2+3='+add(2,3);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-dom",
+      "title": "DOM Basics",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "dom"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "DOM Basics"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-dom.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Select elements and update them."
+        },
+        {
+          "type": "syntax",
+          "title": "Select",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "document.querySelector('#id');\ndocument.querySelectorAll('.class');"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<h2 id='t'>Hello</h2><button id='b'>Change</button>",
+            "css": "body{font-family:system-ui;padding:16px}button{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('t').textContent='Updated!';};"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-events",
+      "title": "Events",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "events"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Events"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-events.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Events react to click, input, submit, keydown and more."
+        },
+        {
+          "type": "syntax",
+          "title": "Listener",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "el.addEventListener('click',()=>{});"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<button id='b'>Click</button><p id='o'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\nbutton{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "document.getElementById('b').onclick=()=>{document.getElementById('o').textContent='Clicked ✅';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-localstorage",
+      "title": "localStorage",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "js",
+        "storage"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "localStorage"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-localstorage.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "JavaScript is used to make web pages interactive.\n\nIt allows you to:\n- Handle user events (click, input)\n- Modify content dynamically\n- Work with data and logic\n\nJavaScript brings functionality and behavior to web pages."
+        },
+        {
+          "type": "p",
+          "text": "Tip: Try changing the values in the example (numbers, colors, text) and re-run. Learning happens by experimenting."
+        },
+        {
+          "type": "p",
+          "text": "Store data in the browser. Store objects as JSON strings."
+        },
+        {
+          "type": "syntax",
+          "title": "Set/Get",
+          "description": "Syntax",
+          "code": {
+            "language": "javascript",
+            "value": "localStorage.setItem('k','v');\nlocalStorage.getItem('k');"
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it",
+          "starter": {
+            "html": "<textarea id='t' placeholder='Write'></textarea><br><button id='s'>Save</button> <span id='m'></span>",
+            "css": "body{font-family:system-ui;padding:16px}textarea{width:100%;max-width:520px;height:90px;padding:10px;border:1px solid #cbd5e1;border-radius:12px}button{padding:10px 12px;border:0;border-radius:12px;background:#2563eb;color:#fff;font-weight:900}",
+            "js": "const t=document.getElementById('t');t.value=localStorage.getItem('note')||'';document.getElementById('s').onclick=()=>{localStorage.setItem('note',t.value);document.getElementById('m').textContent='Saved ✅';};"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Event + input demo",
+          "description": "Read input value and update output text.",
+          "code": {
+            "language": "javascript",
+            "value": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          },
+          "result": {
+            "html": "<input id='name' placeholder='Type name'><button id='go'>Greet</button><p id='out'></p>",
+            "css": "body{font-family:system-ui;padding:16px}\ninput,button{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1}\nbutton{background:#2563eb;color:#fff;border:0;font-weight:900;margin-left:8px}",
+            "js": "document.getElementById('go').onclick=()=>{const n=document.getElementById('name').value||'friend';document.getElementById('out').textContent='Hello, '+n+'!';};"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Getting Started",
+      "slug": "html-seo",
+      "title": "SEO & Meta Tags",
+      "level": "Beginner",
+      "estimatedMinutes": 10,
+      "tags": [
+        "meta",
+        "seo",
+        "head"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "SEO & Meta Tags"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-seo.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Meta tags live in the `<head>` and describe your page.\n\nA good `<title>` and `<meta name=\"description\">` improve SEO and link previews.\n\nSocial platforms also use Open Graph/Twitter meta tags when sharing."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Basic meta tags",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<title>My Page</title>\n<meta name=\"description\" content=\"Short summary of this page.\">"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Preview idea",
+          "description": "This is what you typically put in <head>.",
+          "code": {
+            "language": "html",
+            "value": "<title>My Page</title>\n<meta name=\"description\" content=\"Short summary of this page.\">"
+          },
+          "result": {
+            "html": "<div class='card'><h3>Search preview</h3><p><b>My Page</b><br><span>Short summary of this page.</span></p></div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:14px;padding:14px;max-width:520px}span{color:#64748b}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h1>SEO Head</h1>\n<p>Open DevTools → Elements to see meta tags in the &lt;head&gt;.</p>",
+            "css": "body{font-family:system-ui;padding:16px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-iframes",
+      "title": "Iframes",
+      "level": "Beginner",
+      "estimatedMinutes": 10,
+      "tags": [
+        "iframe",
+        "embed"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Iframes"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-iframe.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "An `<iframe>` embeds another web page inside your page.\n\nUse it for videos, maps, or small widgets.\n\nFor performance, add `loading=\"lazy\"` so it loads only when needed."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Iframe embed",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<iframe src=\"https://example.com\" title=\"Example\" loading=\"lazy\"></iframe>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Simple embed box",
+          "description": "A placeholder to show where iframe appears.",
+          "code": {
+            "language": "html",
+            "value": "<iframe src=\"https://example.com\" title=\"Example\" loading=\"lazy\"></iframe>"
+          },
+          "result": {
+            "html": "<div class='frame'>Embedded content area</div>",
+            "css": "body{font-family:system-ui;padding:16px}.frame{border:2px dashed #2563eb;border-radius:14px;padding:22px;color:#2563eb;background:#f8fafc}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h2>Embed area</h2>\n<div class='frame'>Your iframe would appear here.</div>",
+            "css": "body{font-family:system-ui;padding:16px}.frame{border:2px dashed #2563eb;border-radius:14px;padding:22px;color:#2563eb;background:#f8fafc}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-media-av",
+      "title": "Audio & Video",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "audio",
+        "video",
+        "media"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Audio & Video"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-media-av.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "HTML supports media tags for audio and video.\n\nUse the `controls` attribute to show play/pause UI.\n\nProvide multiple sources for best browser support."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Video element",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<video controls width=\"320\"><source src=\"movie.mp4\" type=\"video/mp4\"></video>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Media placeholder",
+          "description": "We show a simple player-like UI box.",
+          "code": {
+            "language": "html",
+            "value": "<video controls width=\"320\"><source src=\"movie.mp4\" type=\"video/mp4\"></video>"
+          },
+          "result": {
+            "html": "<div class='player'><div class='btn'></div><div class='bar'></div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.player{display:flex;align-items:center;gap:12px;border:1px solid #e2e8f0;border-radius:14px;padding:14px;max-width:420px}.player .btn{width:34px;height:34px;border-radius:999px;background:#2563eb}.player .bar{height:10px;flex:1;border-radius:999px;background:#e2e8f0}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h2>Media</h2>\n<p>Add real media files later in the <code>src</code>.</p>",
+            "css": "body{font-family:system-ui;padding:16px}code{background:#eef2ff;border:1px solid #c7d2fe;padding:2px 6px;border-radius:8px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "html",
+      "module": "Core Elements",
+      "slug": "html-responsive-images",
+      "title": "Responsive Images",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "picture",
+        "srcset",
+        "responsive"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Responsive Images"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/html-html-picture.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Responsive images load the right file for the user’s screen.\n\nUse `<img srcset>` or `<picture>` with `<source>` rules.\n\nThis improves performance on mobile and keeps images sharp on large screens."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Picture element",
+          "description": "Syntax",
+          "code": {
+            "language": "html",
+            "value": "<picture>\n <source media=\"(min-width: 800px)\" srcset=\"large.jpg\">\n <img src=\"small.jpg\" alt=\"...\">\n</picture>"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Responsive image idea",
+          "description": "We show a framed image placeholder.",
+          "code": {
+            "language": "html",
+            "value": "<picture>\n <source media=\"(min-width: 800px)\" srcset=\"large.jpg\">\n <img src=\"small.jpg\" alt=\"...\">\n</picture>"
+          },
+          "result": {
+            "html": "<div class='imgbox'>Image swaps based on screen width</div>",
+            "css": "body{font-family:system-ui;padding:16px}.imgbox{border:1px solid #e2e8f0;border-radius:16px;padding:28px;text-align:center;color:#64748b}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<h2>Responsive Images</h2>\n<div class='imgbox'>Replace with real images later</div>",
+            "css": "body{font-family:system-ui;padding:16px}.imgbox{border:1px solid #e2e8f0;border-radius:16px;padding:28px;text-align:center;color:#64748b}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Box Model & Layout",
+      "slug": "css-position",
+      "title": "Position",
+      "level": "Intermediate",
+      "estimatedMinutes": 14,
+      "tags": [
+        "position",
+        "layout"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Position"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-position.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "The `position` property controls how an element is placed.\n\n• `relative`: stays in flow, can offset with top/left.\n• `absolute`: removed from flow, positioned inside nearest positioned ancestor.\n• `fixed`: relative to viewport.\n• `sticky`: switches between relative and fixed while scrolling."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Position rule",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "position: relative; top: 10px; left: 10px;"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Offset example",
+          "description": "A box moved 10px down/right.",
+          "code": {
+            "language": "css",
+            "value": "position: relative; top: 10px; left: 10px;"
+          },
+          "result": {
+            "html": "<div class='wrap'><div class='box'>Box</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.wrap{height:120px;border:1px solid #e2e8f0;border-radius:14px;position:relative}.box{position:relative;top:10px;left:10px;background:#2563eb;color:#fff;border-radius:12px;padding:12px 14px;display:inline-block}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='wrap'><div class='box'>Move me</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.wrap{height:140px;border:1px solid #e2e8f0;border-radius:14px;position:relative}.box{position:relative;top:10px;left:10px;background:#2563eb;color:#fff;border-radius:12px;padding:12px 14px;display:inline-block}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Box Model & Layout",
+      "slug": "css-zindex",
+      "title": "Z-index",
+      "level": "Intermediate",
+      "estimatedMinutes": 10,
+      "tags": [
+        "z-index",
+        "stacking"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Z-index"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-zindex.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "`z-index` controls the stacking order of positioned elements.\n\nHigher values appear on top.\n\nIt works only when the element is positioned (`relative/absolute/fixed/sticky`)."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Z-index",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "position: relative; z-index: 10;"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Stacking demo",
+          "description": "Two overlapping boxes; the blue one is on top.",
+          "code": {
+            "language": "css",
+            "value": "position: relative; z-index: 10;"
+          },
+          "result": {
+            "html": "<div class='stage'><div class='a'>A</div><div class='b'>B</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.stage{position:relative;height:160px}.a,.b{position:absolute;width:160px;height:110px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900}.a{left:20px;top:30px;background:#0a192f;z-index:1}.b{left:90px;top:60px;background:#2563eb;z-index:2}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='stage'><div class='a'>A</div><div class='b'>B</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.stage{position:relative;height:160px}.a,.b{position:absolute;width:160px;height:110px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900}.a{left:20px;top:30px;background:#0a192f;z-index:1}.b{left:90px;top:60px;background:#2563eb;z-index:2}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Selectors",
+      "slug": "css-pseudo-classes",
+      "title": "Pseudo-classes",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "hover",
+        "focus",
+        "states"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Pseudo-classes"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-pseudo.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Pseudo-classes target an element **state**.\n\nExamples: `:hover` (mouse over), `:focus` (keyboard focus), `:active` (pressed), `:nth-child()` (position in parent)."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Hover style",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "button:hover { background: #1e40af; }"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Hover preview",
+          "description": "Hover the button to see the background change.",
+          "code": {
+            "language": "css",
+            "value": "button:hover { background: #1e40af; }"
+          },
+          "result": {
+            "html": "<button class='b'>Hover me</button>",
+            "css": "body{font-family:system-ui;padding:16px}.b{background:#2563eb;color:#fff;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}.b:hover{background:#1e40af}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<button class='b'>Hover me</button>",
+            "css": "body{font-family:system-ui;padding:16px}.b{background:#2563eb;color:#fff;border:none;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}.b:hover{background:#1e40af}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Selectors",
+      "slug": "css-pseudo-elements",
+      "title": "Pseudo-elements",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "before",
+        "after"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Pseudo-elements"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-beforeafter.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Pseudo-elements create **virtual elements** inside an element.\n\nUse `::before` and `::after` with `content` to add icons, badges, decorative lines, etc.\n\nThey are great for UI details without extra HTML."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Badge with ::after",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": ".tag::after{content:'NEW';}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Badge demo",
+          "description": "A label with an automatic NEW badge.",
+          "code": {
+            "language": "css",
+            "value": ".tag::after{content:'NEW';}"
+          },
+          "result": {
+            "html": "<span class='tag'>Lesson</span>",
+            "css": "body{font-family:system-ui;padding:16px}.tag{display:inline-block;padding:10px 14px;border:1px solid #e2e8f0;border-radius:14px;font-weight:900;position:relative}.tag::after{content:'NEW';position:absolute;top:-10px;right:-10px;background:#f59e0b;color:#111827;font-weight:900;font-size:12px;padding:4px 8px;border-radius:999px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<span class='tag'>Lesson</span>",
+            "css": "body{font-family:system-ui;padding:16px}.tag{display:inline-block;padding:10px 14px;border:1px solid #e2e8f0;border-radius:14px;font-weight:900;position:relative}.tag::after{content:'NEW';position:absolute;top:-10px;right:-10px;background:#f59e0b;color:#111827;font-weight:900;font-size:12px;padding:4px 8px;border-radius:999px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Responsive & Effects",
+      "slug": "css-animations",
+      "title": "Animations",
+      "level": "Intermediate",
+      "estimatedMinutes": 14,
+      "tags": [
+        "animation",
+        "keyframes"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Animations"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-anim.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Animations use `@keyframes` to define steps over time.\n\nThen apply with `animation: name duration timing infinite;`.\n\nUse animations for subtle attention (loading, highlights) — don’t overdo it."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Keyframes",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Pulse demo",
+          "description": "A dot that gently pulses.",
+          "code": {
+            "language": "css",
+            "value": "@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}"
+          },
+          "result": {
+            "html": "<div class='dot'></div>",
+            "css": "body{font-family:system-ui;padding:16px}.dot{width:46px;height:46px;border-radius:999px;background:#2563eb;animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='dot'></div>",
+            "css": "body{font-family:system-ui;padding:16px}.dot{width:46px;height:46px;border-radius:999px;background:#2563eb;animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Responsive & Effects",
+      "slug": "css-transforms",
+      "title": "Transforms",
+      "level": "Intermediate",
+      "estimatedMinutes": 10,
+      "tags": [
+        "transform"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Transforms"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-transform.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Transforms visually move/rotate/scale an element without changing document flow.\n\nThey’re fast and smooth, especially with transitions.\n\nCommon transforms: `translate`, `scale`, `rotate`."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Transform",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "transform: translateY(-6px) scale(1.02);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Lift on hover",
+          "description": "Hover the card to lift.",
+          "code": {
+            "language": "css",
+            "value": "transform: translateY(-6px) scale(1.02);"
+          },
+          "result": {
+            "html": "<div class='card'>Hover me</div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:16px;padding:18px;max-width:360px;transition:transform .2s ease, box-shadow .2s ease}.card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.10)}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='card'>Hover me</div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:16px;padding:18px;max-width:360px;transition:transform .2s ease, box-shadow .2s ease}.card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.10)}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Getting Started",
+      "slug": "css-typography",
+      "title": "Typography Basics",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "typography",
+        "fonts"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Typography Basics"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-typography.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Typography settings control readability.\n\nStart with a comfortable `font-size`, use `line-height: 1.5` for paragraphs, and keep weights consistent.\n\nGood typography makes your UI look professional even with simple colors."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Paragraph style",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "p{font-size:16px;line-height:1.6;color:#111827;}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Readable paragraph",
+          "description": "A paragraph with comfortable spacing.",
+          "code": {
+            "language": "css",
+            "value": "p{font-size:16px;line-height:1.6;color:#111827;}"
+          },
+          "result": {
+            "html": "<p class='p'>Readable text is easier to scan. Use line-height and consistent font sizes.</p>",
+            "css": "body{font-family:system-ui;padding:16px}.p{font-size:16px;line-height:1.6;color:#111827;max-width:520px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<p class='p'>Edit font-size and line-height to see the difference.</p>",
+            "css": "body{font-family:system-ui;padding:16px}.p{font-size:16px;line-height:1.6;color:#111827;max-width:520px}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-arrays",
+      "title": "Arrays",
+      "level": "Beginner",
+      "estimatedMinutes": 14,
+      "tags": [
+        "array",
+        "list"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Arrays"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-arrays.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Arrays store an ordered list of values.\n\nUse indexes starting at 0. Add items with `push`, remove with `pop`, and loop through with `for` or `forEach`.\n\nArrays are used everywhere: lists, menus, results, lessons, etc."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Create an array",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "const langs = ['HTML','CSS','JS'];\nconsole.log(langs[0]);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Array output",
+          "description": "Prints the first item.",
+          "code": {
+            "language": "js",
+            "value": "const langs = ['HTML','CSS','JS'];\nconsole.log(langs[0]);"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\nconst langs=['HTML','CSS','JS'];\ndocument.getElementById('out').textContent=langs.join(', ');\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "const langs=['HTML','CSS','JS'];\nconsole.log(langs.join(', '));"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-objects",
+      "title": "Objects",
+      "level": "Beginner",
+      "estimatedMinutes": 14,
+      "tags": [
+        "object",
+        "key-value"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Objects"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-objects.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Objects store data as **key → value** pairs.\n\nUse dot notation `obj.key` or bracket notation `obj['key']`.\n\nObjects model real things like a lesson, user, or settings."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Create an object",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "const lesson = { title:'Box Model', minutes:12 };\nconsole.log(lesson.title);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Object output",
+          "description": "Shows the title from the object.",
+          "code": {
+            "language": "js",
+            "value": "const lesson = { title:'Box Model', minutes:12 };\nconsole.log(lesson.title);"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\nconst lesson={title:'Box Model',minutes:12};\ndocument.getElementById('out').textContent = lesson.title + ' — ' + lesson.minutes + ' min';\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "const lesson={title:'Box Model',minutes:12};\nconsole.log(lesson);"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-array-methods",
+      "title": "Array Methods",
+      "level": "Intermediate",
+      "estimatedMinutes": 14,
+      "tags": [
+        "map",
+        "filter"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Array Methods"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-arraymethods.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "`map`, `filter`, and `find` help you transform arrays.\n\n• `map` → make a new array\n• `filter` → keep matching items\n• `find` → first matching item\n\nThese are perfect for search and navigation features."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Filter example",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "const nums=[1,2,3,4];\nconst even=nums.filter(n=>n%2===0);\nconsole.log(even);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Filter output",
+          "description": "Displays [2, 4].",
+          "code": {
+            "language": "js",
+            "value": "const nums=[1,2,3,4];\nconst even=nums.filter(n=>n%2===0);\nconsole.log(even);"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\nconst nums=[1,2,3,4];\nconst even=nums.filter(n=>n%2===0);\ndocument.getElementById('out').textContent = JSON.stringify(even);\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "const nums=[1,2,3,4];\nconsole.log(nums.map(n=>n*n));"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-fetch",
+      "title": "Fetch API",
+      "level": "Intermediate",
+      "estimatedMinutes": 14,
+      "tags": [
+        "fetch",
+        "api"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Fetch API"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-fetch.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "`fetch()` requests data from a URL.\n\nIt returns a Promise. You usually convert the response using `json()`.\n\nIn real apps, fetch is used to load course content from a backend."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Fetch JSON",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "fetch('data/content.json').then(r=>r.json()).then(db=>console.log(db.courses.length));"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Fetch preview",
+          "description": "We simulate output by reading local JSON.",
+          "code": {
+            "language": "js",
+            "value": "fetch('data/content.json').then(r=>r.json()).then(db=>console.log(db.courses.length));"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\nfetch('data/content.json').then(r=>r.json()).then(db=>{\n document.getElementById('out').textContent = 'Courses: ' + db.courses.length;\n});\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "fetch('https://api.example.com').then(r=>r.json()).then(console.log);"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-promises",
+      "title": "Promises",
+      "level": "Intermediate",
+      "estimatedMinutes": 14,
+      "tags": [
+        "promise",
+        "async"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Promises"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-promises.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Promises represent a value you’ll get later (async).\n\nUse `.then()` for success and `.catch()` for errors.\n\nMost modern APIs (fetch, timers, etc.) use Promises."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Promise",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "const p = Promise.resolve('Done');\np.then(console.log);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Promise output",
+          "description": "Shows Done.",
+          "code": {
+            "language": "js",
+            "value": "const p = Promise.resolve('Done');\np.then(console.log);"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\nPromise.resolve('Done').then(v=>{document.getElementById('out').textContent=v;});\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "new Promise((res)=>setTimeout(()=>res('OK'),1000)).then(console.log);"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-asyncawait",
+      "title": "Async/Await",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "async",
+        "await"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Async/Await"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-asyncawait.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "`async/await` is syntax on top of Promises.\n\nMark a function `async`, then `await` a Promise.\n\nThis makes code easier to read compared to long `.then()` chains."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Await fetch",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "async function load(){\n const r = await fetch('data/content.json');\n return r.json();\n}"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Async preview",
+          "description": "We show how many lessons exist.",
+          "code": {
+            "language": "js",
+            "value": "async function load(){\n const r = await fetch('data/content.json');\n return r.json();\n}"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\n(async ()=>{\n const r=await fetch('data/content.json');\n const db=await r.json();\n document.getElementById('out').textContent='Lessons: '+db.lessons.length;\n})();\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "async function load(){const r=await fetch(url);return r.json();}"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "Fundamentals",
+      "slug": "js-errors",
+      "title": "Error Handling",
+      "level": "Intermediate",
+      "estimatedMinutes": 10,
+      "tags": [
+        "try",
+        "catch"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Error Handling"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-errors.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Use `try/catch` to handle runtime errors without breaking the whole app.\n\nThis is useful when parsing JSON, accessing storage, or calling APIs.\n\nAlways show a friendly message to users instead of crashing."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Try/catch",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "try{ JSON.parse('oops'); }catch(e){ console.log('Invalid JSON'); }"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Error preview",
+          "description": "Shows a friendly message.",
+          "code": {
+            "language": "js",
+            "value": "try{ JSON.parse('oops'); }catch(e){ console.log('Invalid JSON'); }"
+          },
+          "result": {
+            "html": "<pre id='out'></pre>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<pre id='out'></pre>\n<script>\ntry{ JSON.parse('oops'); }\ncatch(e){ document.getElementById('out').textContent='Invalid JSON'; }\n</script>",
+            "css": "body{font-family:system-ui;padding:16px}pre{background:#0a192f;color:#fff;padding:14px;border-radius:14px}",
+            "js": "try { risky(); } catch (e) { console.error(e); }"
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "js",
+      "module": "DOM & Storage",
+      "slug": "js-modules",
+      "title": "Modules (import/export)",
+      "level": "Intermediate",
+      "estimatedMinutes": 12,
+      "tags": [
+        "modules",
+        "import",
+        "export"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Modules (import/export)"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/js-js-modules.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Modules help you split JavaScript into separate files.\n\nUse `export` to expose functions/values, and `import` to use them elsewhere.\n\nFor this project, modules make the code easier to maintain as you add more courses."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Module syntax",
+          "description": "Syntax",
+          "code": {
+            "language": "js",
+            "value": "// utils.js\nexport function sum(a,b){return a+b;}\n// app.js\nimport {sum} from './utils.js';"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Concept preview",
+          "description": "A reminder card.",
+          "code": {
+            "language": "js",
+            "value": "// utils.js\nexport function sum(a,b){return a+b;}\n// app.js\nimport {sum} from './utils.js';"
+          },
+          "result": {
+            "html": "<div class='card'><b>Tip:</b> use <code>type=\"module\"</code> in your script tag.</div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:14px;padding:14px}code{background:#eef2ff;border:1px solid #c7d2fe;padding:2px 6px;border-radius:8px}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='card'><b>Modules</b><p>Split code for easy future updates.</p></div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:14px;padding:14px;max-width:520px}p{margin:8px 0 0;color:#64748b}",
+            "js": ""
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "css",
+      "module": "Getting Started",
+      "slug": "css-backgrounds",
+      "title": "Backgrounds & Gradients",
+      "level": "Beginner",
+      "estimatedMinutes": 12,
+      "tags": [
+        "background",
+        "gradient"
+      ],
+      "blocks": [
+        {
+          "type": "h",
+          "text": "Backgrounds & Gradients"
+        },
+        {
+          "type": "image",
+          "title": "Topic visual",
+          "src": "assets/visuals/css-css-backgrounds.svg",
+          "caption": "Visual explanation of this topic."
+        },
+        {
+          "type": "note",
+          "title": "Explanation",
+          "text": "Backgrounds set the surface style of elements.\n\nUse `background-color` for solid color and `background-image: linear-gradient(...)` for gradients.\n\nKeep backgrounds subtle so text stays readable."
+        },
+        {
+          "type": "p",
+          "text": "Tip: edit the example values and refresh the preview. Learning happens by experimenting."
+        },
+        {
+          "type": "syntax",
+          "title": "Gradient background",
+          "description": "Syntax",
+          "code": {
+            "language": "css",
+            "value": "background: linear-gradient(90deg, #2563eb, #1e40af);"
+          }
+        },
+        {
+          "type": "example",
+          "title": "Gradient card",
+          "description": "A clean gradient header.",
+          "code": {
+            "language": "css",
+            "value": "background: linear-gradient(90deg, #2563eb, #1e40af);"
+          },
+          "result": {
+            "html": "<div class='card'><div class='top'>Header</div><div class='body'>Content</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;max-width:420px}.top{padding:16px;color:#fff;font-weight:900;background:linear-gradient(90deg,#2563eb,#1e40af)}.body{padding:16px;color:#111827;background:#fff}",
+            "js": ""
+          }
+        },
+        {
+          "type": "tryit",
+          "title": "Try it in editor",
+          "starter": {
+            "html": "<div class='card'><div class='top'>Header</div><div class='body'>Content</div></div>",
+            "css": "body{font-family:system-ui;padding:16px}.card{border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;max-width:420px}.top{padding:16px;color:#fff;font-weight:900;background:linear-gradient(90deg,#2563eb,#1e40af)}.body{padding:16px;color:#111827;background:#fff}",
+            "js": ""
+          }
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Element",
+      "definition": "A building block of HTML defined by tags (e.g., <p>...</p>)."
+    },
+    {
+      "term": "Attribute",
+      "definition": "Extra information on an element (e.g., href, src, class)."
+    },
+    {
+      "term": "Selector",
+      "definition": "A CSS pattern that targets elements to style."
+    },
+    {
+      "term": "Specificity",
+      "definition": "Rules that decide which CSS selector wins when multiple match."
+    },
+    {
+      "term": "DOM",
+      "definition": "The page represented as a tree that JavaScript can read and modify."
+    },
+    {
+      "term": "Event",
+      "definition": "A user/browser action like click, input, submit or keydown."
+    },
+    {
+      "term": "localStorage",
+      "definition": "Browser storage for key/value strings that persist across refresh."
+    }
+  ]
+}

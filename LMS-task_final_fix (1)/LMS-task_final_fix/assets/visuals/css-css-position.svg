@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='980' height='420' viewBox='0 0 980 420'>
+<defs>
+<style><![CDATA[
+text{font-family:system-ui,Segoe UI,Roboto,Arial;fill:#111827}
+.t{font-weight:900;font-size:44px}
+.s{font-weight:700;font-size:18px;fill:#334155}
+.b{fill:#ffffff;stroke:#2563eb;stroke-width:3;rx:18;ry:18}
+.l{font-weight:800;font-size:18px;fill:#0f172a}
+]]></style>
+</defs>
+<rect x='0' y='0' width='980' height='420' rx='26' ry='26' fill='#ffffff' stroke='#e2e8f0'/>
+<text x='48' y='78' class='t'>Position</text>
+<text x='48' y='110' class='s'>CSS</text>
+<rect class='b' x='60' y='150' width='860' height='220'/>
+<text class='l' x='78' y='184'>css-position</text>
+</svg>
