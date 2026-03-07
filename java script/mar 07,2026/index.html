@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register & Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="registerForm">
+<h2>Register</h2>
+
+<input type="text" id="regUser" placeholder="Username">
+<input type="password" id="regPass" placeholder="Password">
+
+<button onclick="registerUser()">Register</button>
+
+<p class="switch" onclick="showLogin()">Already have account? Login</p>
+</div>
+
+
+<div id="loginForm" style="display:none;">
+<h2>Login</h2>
+
+<input type="text" id="loginUser" placeholder="Username">
+<input type="password" id="loginPass" placeholder="Password">
+
+<button onclick="loginUser()">Login</button>
+
+<p class="switch" onclick="showRegister()">Create Account</p>
+</div>
+
+<div id="dashboard">
+<h1>Akhila Reddy</h1>
+<p> I am Akhila Reddy ,Usually closest persons called as AK reddy.My hobbies are reading comic books,watching football, Listening songs. </p>
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
