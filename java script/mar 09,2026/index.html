@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DesignFrame AI Studio</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h1>DesignFrame</h1>
+<p class="tag">AI Creative Studio</p>
+
+<div class="section">
+
+<label>AI Image Generator</label>
+
+<input id="prompt" placeholder="Type prompt (beach sunset)">
+
+<button class="generateBtn" onclick="generateImage()">
+Generate Image
+</button>
+
+</div>
+
+<div class="section">
+
+<label>Add Shapes</label>
+
+<div class="shapeButtons">
+<button onclick="addSquare()">Square</button>
+<button onclick="addCircle()">Circle</button>
+<button onclick="addCircle()">Hexagon</button>
+<button onclick="addCircle()">Octagon</button>
+</div>
+
+</div>
+
+<div class="section">
+
+<label>Frame Background</label>
+<input type="color" id="bgColor" onchange="changeBackground()">
+
+<label>Frame border Radius</label>
+<input type="range" min="0" max="80" value="20" id="roundness" oninput="changeRoundness()">
+
+</div>
+
+<div class="section">
+
+<button class="clearBtn" onclick="clearCanvas()">Clear Canvas</button>
+<button class="downloadBtn" onclick="downloadFrame()">Download Frame</button>
+
+</div>
+
+</div>
+
+
+<!-- Canvas -->
+
+<div class="workspace">
+
+<div id="frame" class="frame"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

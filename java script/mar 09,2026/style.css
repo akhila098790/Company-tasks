@@ -1,0 +1,148 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:#3b5b45;
+color:white;
+}
+
+.app{
+display:flex;
+height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:260px;
+background:#112715;
+padding:20px;
+border-right:1px solid #3e5748;
+}
+
+.sidebar h1{
+margin-bottom:0;
+}
+
+.tag{
+color:#9ca3af;
+font-size:12px;
+margin-bottom:20px;
+}
+
+.section{
+margin-bottom:25px;
+}
+
+.sidebar input{
+width:100%;
+padding:10px;
+margin-top:8px;
+border-radius:6px;
+border:none;
+}
+
+.sidebar button{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+}
+
+.generateBtn{
+background:#06d474;
+color:white;
+}
+
+.shapeButtons{
+display:flex;
+gap:10px;
+}
+
+.shapeButtons button{
+background:#557c79;
+color:white;
+}
+
+.clearBtn{
+background:#deef44;
+}
+
+.downloadBtn{
+background:#63eaf1;
+}
+
+/* Workspace */
+
+.workspace{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#183e25;
+}
+
+/* Frame */
+
+.frame{
+width:650px;
+height:450px;
+background:#e5e7eb;
+border-radius:20px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+/* Image */
+
+.frame img{
+max-width:200px;
+border-radius:10px;
+}
+
+/* Square */
+
+.square{
+width:180px;
+height:180px;
+background-color: #111827;
+border:4px solid #3b82f6;
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute;
+}
+
+/* Circle */
+
+.circle{
+width:90px;
+height:90px;
+border-radius:50%;
+background:#b89860;
+}
+
+.Hexagon{
+   width:180px;
+height:180px;
+background-color: #111827;
+border:4px solid #3b82f6;
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute;
+} 
+
+.octagon{
+width:180px;
+height:180px;
+background-color: #111827;
+border:4px solid #3b82f6;
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+display:flex;
+}
